@@ -10,24 +10,34 @@
   <body>
     <main class="container">
       <form action="" class="formatterForm">
-        <div class="checks-container">
-          <div class="check">
-            <input type="checkbox" name="upper" id="" />
-            <label for="upper">Uppercase</label>
+        <div class="actions-container">
+          <div class="checks-container">
+            <div class="check">
+              <input type="radio" name="check" value="uppercase" id="upper" />
+              <label for="upper">Uppercase</label>
+            </div>
+            <div class="check">
+              <input type="radio" name="check" value="lowercase" id="lower" />
+              <label for="lower">Lowercase</label>
+            </div>
+            <div class="check">
+              <input
+                type="radio"
+                name="check"
+                value="capitalize"
+                id="capitalize"
+              />
+              <label for="capitalize">Capitalize</label>
+            </div>
           </div>
-          <div class="check">
-            <input type="checkbox" name="lower" id="" />
-            <label for="lower">Lowercase</label>
-          </div>
-          <div class="check">
-            <input type="checkbox" name="capitalize" id="" />
-            <label for="capitalize">Capitalize</label>
-          </div>
-          <button type="submit">Format</button>
+          <button class="btn btn-submit" type="submit">Format</button>
         </div>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <p class="characterCount">Se contaron 10 caracteres</p>
+        <textarea class="textarea" name="text" id=""></textarea>
+        <p class="characterCount">
+          <span class="characters">10 characters </span>were counted.
+        </p>
       </form>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
